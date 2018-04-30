@@ -1,0 +1,459 @@
+/*=========================================================*/
+@font-face {
+	font-family: ProximaNova-Reg;
+	src: url(../fonts/ProximaNova/ProximaNova-Reg.otf);
+}
+
+@font-face {
+	font-family: ProximaNova-Reg;
+	src: url(../fonts/ProximaNova/ProximaNova-Reg.otf);
+}
+
+@font-face {
+	font-family: ProximaNova-Light;
+	src: url(../fonts/ProximaNova/ProximaNova-Light.otf);
+}
+
+@font-face {
+	font-family: ProximaNova-Bold;
+	src: url(../fonts/ProximaNova/ProximaNova-Bold.otf);
+}
+
+@font-face {
+	font-family: Roboto-Light;
+	src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+	font-family: Roboto-Regular;
+	src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: MyriadPro-Regular;
+	src: url(../fonts/MyriadPro-Regular.ttf);
+}
+/*=========================================================*/
+html {
+	font-size: 10px;
+}
+
+* {
+	margin: 0;
+}
+
+ol, ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.header {
+	height: 67px;
+	width: 100%;
+	background-color: #f7c61d;
+}
+
+.container, .foterosnova {
+	max-width: 1230px;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header ul {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+
+}
+
+.header a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 1.6rem;
+	font-family: ProximaNova-Reg;
+	color: #000000;
+}
+
+.header a:hover, .footermain a:hover {
+	color: #fff;
+}
+
+.news-all {
+	width: 77%;
+}
+
+.news-all > h4 {
+	margin: 42px 0 14px 0;
+	font-family: 'ProximaNova-Bold';
+	font-size: 2.4rem;
+
+}
+
+aside {
+	width: 23%;
+	padding-left: 3rem;
+	border-left: 1px #c2c2c2 solid;
+	min-height: 100vh;
+}
+
+.popular-news-title:hover {
+	color: #f7c61d;
+}
+
+.news-wrap {
+	display: flex;
+}
+
+.news-one {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 32px;
+}
+
+.news-img {
+	display: flex;
+	align-self: flex-start;
+	flex-wrap: wrap;
+	flex-shrink: 0;
+	height: auto;
+	width: 35%;
+	border-radius: 7px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.news-img img {
+	align-self: center;
+	height: auto;
+	width: 100%;
+	-moz-transition: all 1s ease-out;
+ 	-o-transition: all 1s ease-out;
+ 	-webkit-transition: all 1s ease-out;
+}
+
+.news-img img:hover {
+	-webkit-transform: scale(1.1);
+ 	-moz-transform: scale(1.1);
+ 	-o-transform: scale(1.1);
+ 	cursor: pointer;
+}
+
+.news-title {
+	font-size: 3rem;
+	text-transform: capitalize;
+	font-family: 'ProximaNova-Reg';
+	font-weight: lighter;
+	opacity: .9;
+	color: #333333;
+}
+
+.news-title:hover, .author a:hover {
+	color: #e3b002;
+}
+
+.news-content {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.news-meta, .author a {
+	margin: 20px 0 20px 0;
+	font-size: 1.3rem;
+	font-family: 'Roboto-Light';
+	color: #999999;
+
+}
+
+.author:before, .author:after {
+	content: '|';
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.news-meta span:last-child, .col_comment {
+	color: #e3b002;
+}
+
+.news-content p a {
+	color: #e3b002;
+}
+
+p {
+	font-family: 'Roboto-Light';
+	font-size: 1.6rem;
+	color: #555555;
+}
+
+.battom {
+	margin-top: 18px;
+	margin-bottom: 50px;
+	width: 18%;
+	padding: 1.2rem 0 1.2rem 0;
+	border: 1px solid #f8cc33;
+	border-radius: 5px;
+	font-family: 'Roboto-Regular';
+	font-size: 1.2rem;
+	color: #000000;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.battom:hover {
+	background-color: #f8cc33;
+	color: #fff;
+}
+
+.icon {
+	margin-top: 20px;
+}
+
+.icon span + span:before {
+	content: '|';
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.fa-eye, .fa-comment {
+	margin-right: 1rem;
+	color: #555555;
+	font-size: 1.3rem;
+}
+
+.info_icon, .col_comment {
+	display: inline;
+	font-family: 'Roboto-Regular';
+	font-size: 1.3rem;
+}
+
+.popular-news-aside {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 45px;
+}
+
+.popular-news-aside h4 {
+	width: 100%;
+	font-family: 'ProximaNova-Bold';
+	font-size: 1.8rem;
+	color: #000
+}
+
+.popular-news-one {
+	margin-top: 25px;
+}
+
+.popular-news-date {
+	margin-bottom: 9px;
+	font-family: 'Roboto-Regular';
+	font-size: 1.2rem;
+	color: #999;
+}
+
+.popular-news-title {
+	font-family: 'Roboto-Regular';
+	font-size: 1.6rem;
+	color: #000;
+
+}
+
+footer {
+	height: 65px;
+	background-color: #f8cc33;
+}
+
+.foterosnova {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+.footermain a {
+	padding-left: 1.7rem;
+	padding-right: 1.7rem;
+	font-family: 'Roboto-Regular';
+	font-size: 1.4rem;
+	color: #000;
+}
+
+
+.footericon a {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	height: 4rem;
+	width: 4rem;
+	margin-right: 0.7rem;
+	margin-left: 0.7rem;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	background-color: #fff;
+	font-size: 1.4rem;
+	color: #f8cc33;
+}
+
+
+.footericon a:hover {
+	background-color: #f8cc33;
+	color: #fff;
+}
+
+.infosite {
+	font-size: 1.3rem;
+	font-family: 'ProximaNova-Light';
+	color: #a78613;
+}
+/*=============Поисковик=================*/
+.search {
+	margin-top: calc(56px + 2.4rem);
+  /* устанавливаем необходимую ширину формы в зависимости от дизайна
+  ** форма без проблем растягивается */
+	width: 100%;
+  /* кнопку отправки будем позиционировать абсолютно,
+  ** поэтому необходимо это свойство */
+  position: relative;
+}
+
+.search input {
+  /* отключаем бордюры у инпутов */
+  border: none;
+}
+
+/* стили для поля ввода */
+.search .input {
+	width: 100%;
+	padding: 8px 15px 9px 30px;
+
+	/* чтобы ширина поля ввода (100%) включала в себя внутренние отступы */
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	border-radius: 20px;
+	background: #fff;
+	font: 1.4rem 'Roboto-Regular', Arial, sans-serif;
+	color: #999999;
+	outline: none;
+}
+
+/* меняем оформление поля ввода при фокусе */
+.search .input:focus {
+  background: #fff;
+  color: #999999;
+}
+
+/* оформляем кнопку отправки */
+.icon-search {
+  /* позиционируем кнопку абсолютно от левого края формы */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 37px;
+
+  /* растягиваем кнопку на всю высоту формы */
+  height: 100%;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 1.4rem;
+  outline: none;
+}
+
+/* при наведении курсора меняем прозрачность кнопки отправки */
+.icon-search:hover {
+	color: #f8cc33;
+}
+/* данное свойство необходимо для того, чтобы в браузерах
+** Chrome и Safari можно было стилизовать инпуты */
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+.input::-webkit-search-cancel-button { 
+	-webkit-appearance: none;
+}
+/*=============================*/
+/* задаем отдельные стили для браузеров IE ниже 9-й версии */
+*+html .search {
+  /* для IE7 подгоняем ширину под другие браузеры и добавляем правый
+  ** внутренний отступ, чтобы кнопка отправки встала на свое место */
+  width: 28%;
+  padding: 0 52px 0 0;
+}
+.search .input {
+  border: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 7px;
+  padding-bottom: 8px;
+}
+.search .input:focus {
+  border: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+}
+
+/*============= Календпрь на JS ====================*/
+
+#calendar2 {
+	border: 1px solid #e5e5e5;
+	border-radius: 10px;
+	margin-top: 39px;
+	width: 100%;
+	font: monospace;
+	line-height: 1.2em;
+	font-size: 15px;
+	text-align: center;
+	border-spacing: 0;
+}
+
+#calendar2 thead tr:last-child {
+	height: 28px;
+	font-size: 1.3rem;
+	font-family: 'Roboto-Regular';
+	color: #888888;
+	background-color: #e7e7e7;
+}
+
+#calendar2 thead tr:nth-child(1) td:nth-child(2) {
+	height: 40px;
+	font-family: 'ProximaNova-Reg';
+	color: #000000;
+}
+
+#calendar2 thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+	cursor: pointer;
+	color: #f7c61d;
+}
+
+#calendar2 tbody td {
+	height: 28px;
+	cursor: pointer;
+	color: rgb(44, 86, 122);
+	font-family: 'Roboto-Regular';
+	font-size: 1.1rem;
+	color: #000;
+	padding: 0;
+	margin: 0;
+	border: 1px solid #e5e5e5;
+}
+
+#calendar2 tbody td:nth-child(n+6), #calendar2 .holiday {
+	font-weight: bold;
+}
+
+#calendar2 tbody td.today {
+	background: #f7c61d ;
+	color: #fff;
+	border: none;
+}
+
+#calendar2 tbody td:hover {
+	background: #f1f1f1;
+	color: #999999;
+}
